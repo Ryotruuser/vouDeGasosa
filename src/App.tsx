@@ -1,4 +1,4 @@
-import { useState, FormEvent } from 'react'
+import { useState, type FormEvent } from 'react'
 import './App.css'
 
 
@@ -12,8 +12,8 @@ interface InfoProps{
 }
 
 function App() {
-  const [gasolinaInput, setGasolinaInput] = useState();
-  const [alcoolInput, setAlcoolInput] = useState();
+  const [gasolinaInput, setGasolinaInput] = useState(0);
+  const [alcoolInput, setAlcoolInput] = useState(0);
   const [info, setInfo] = useState<InfoProps>()
 
 
